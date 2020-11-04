@@ -1,0 +1,112 @@
+{
+    "pools": [
+        {
+            "rolls": {
+
+                "min": 20,
+                "max": 30
+            },
+
+            "entries": [
+                {
+                    "type": "empty",
+                    "weight": 1,
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 0.90
+                        }
+                    ]
+                },
+
+
+                {
+                    "type": "item",
+                    "name": "minecraft:gold_nugget",
+                    "weight": 1,
+                    "quanity": 5,
+
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{'server_currency': 1b, display:{Name:'{\"text\": \"Coins\", \"color\": \"yellow\", \"bold\": true}'}}"
+                        }
+                    ],
+
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 0.25
+                        }
+                    ]
+                },
+
+
+                {
+                    "type": "item",
+                    "name": "minecraft:gold_nugget",
+                    "weight": 1,
+                    "quanity": 6,
+
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{'server_currency': 1b, display:{Name:'{\"text\": \"Coins\", \"color\": \"yellow\", \"bold\": true}'}}"
+                        }
+                    ],
+
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 0.50
+                        }
+                    ]
+                },
+
+
+                {
+                    "type": "item",
+                    "name": "minecraft:gold_nugget",
+                    "weight": 1,
+                    "quanity": 8,
+
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{'server_currency': 1b, display:{Name:'{\"text\": \"Coins\", \"color\": \"yellow\", \"bold\": true}'}}"
+                        }
+                    ],
+
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 0.75
+                        }
+                    ]
+                },
+
+
+                {
+                    "type": "item",
+                    "name": "minecraft:gold_nugget",
+                    "weight": 1,
+                    "quanity": 10,
+
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{'server_currency': 1b, display:{Name:'{\"text\": \"Coins\", \"color\": \"yellow\", \"bold\": true}'}}"
+                        }
+                    ],
+
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 1.0
+                        }
+                    ]                    
+                }
+            ]
+        }
+    ]
+}

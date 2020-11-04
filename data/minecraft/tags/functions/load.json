@@ -1,0 +1,6 @@
+{
+	"values": [
+		"permissions:reload",
+		"permissions:announcements/init"
+	]
+}

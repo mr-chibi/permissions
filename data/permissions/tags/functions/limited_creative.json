@@ -1,0 +1,11 @@
+{
+	"values": [
+		"permissions:limited_creative/items",
+		"permissions:limited_creative/decoration",
+		"permissions:limited_creative/tools",
+		"permissions:limited_creative/armor",
+		"permissions:limited_creative/shulkers",
+		"permissions:limited_creative/beds",
+		"permissions:limited_creative/skulls"
+	]
+}
