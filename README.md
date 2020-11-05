@@ -1,5 +1,5 @@
 <h1><img src="https://github.com/mr-chibi/permissions/blob/main/pack.png?raw=true">Permissions & Essentials</h1>
-<p>Mr_Chibi's Permissions & Essentials is a minecraft datapack! It's Multiplayer Friendly! Server Owners can edit permissions!</p>
+<p>Mr_Chibi's Permissions & Essentials is a minecraft datapack! It's Singleplayer & Multiplayer Friendly! Server Owners can edit permissions!</p>
 
 <h2>What Unique Features does pack offer?</h2>
 <ul>
