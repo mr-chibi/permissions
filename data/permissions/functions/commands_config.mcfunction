@@ -1,8 +1,12 @@
 ###################################################################################
+# Bank Load Functions:
+###################################################################################
+function permissions:commands/bank/update
+
+###################################################################################
 # On Load Functions:
 ###################################################################################
 function permissions:commands/functions/shops_update
-function permissions:commands/functions/warps_protection
 function permissions:commands/functions/shop_profession
 
 
@@ -67,4 +71,5 @@ execute if score @s ranks >= Guest ranks run scoreboard players enable @s delhom
 execute if score @s ranks >= Guest ranks run scoreboard players enable @s random_warp
 execute if score @s ranks >= Guest ranks run scoreboard players enable @s spawn
 execute if score @s ranks >= Guest ranks run scoreboard players enable @s rules
+execute if score @s ranks >= Guest ranks run scoreboard players enable @s bank
 execute if score @s ranks >= Guest ranks run scoreboard players enable @s bal

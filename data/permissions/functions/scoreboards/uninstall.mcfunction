@@ -6,6 +6,9 @@ scoreboard objectives remove ranks
 #
 scoreboard objectives remove spawn
 scoreboard objectives remove rules
+scoreboard objectives remove bank
+scoreboard objectives remove bank_interaction
+scoreboard objectives remove bank_option
 scoreboard objectives remove bal
 scoreboard objectives remove balance
 

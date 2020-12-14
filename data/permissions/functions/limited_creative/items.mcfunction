@@ -4,6 +4,7 @@ kill @e[type=minecraft:item,distance=0..5]
 #
 clear @s minecraft:enchanted_book
 clear @s minecraft:iron_nugget
+clear @s minecraft:gold_nugget
 clear @s minecraft:gunpowder
 clear @s minecraft:coal
 clear @s minecraft:clay_ball

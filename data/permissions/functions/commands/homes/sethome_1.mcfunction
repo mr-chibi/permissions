@@ -13,7 +13,7 @@ execute as @e[type=minecraft:armor_stand,tag=home_1] if score @s home1_id = @p h
 ##############################################################
 	# Summon Armorstand:
 ##############################################################
-summon minecraft:armor_stand ~ ~ ~ {CustomName:"{\"text\": \"Home 1\"}", CustomNameVisible:1b, Invisible:1b, Tags:["home_1"]}
+summon minecraft:armor_stand ~ ~ ~ {CustomName:"{\"text\": \"Home 1\"}", CustomNameVisible:1b, Invisible:1b, PersistenceRequired:1b, Tags:["home_1"]}
 
 
 ##############################################################

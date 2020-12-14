@@ -1,11 +1,18 @@
-#
+##################################################################
+	# Essentials #
+##################################################################
 scoreboard objectives add spawn trigger
 scoreboard objectives add rules trigger
+scoreboard objectives add bank trigger
+scoreboard objectives add bank_interaction minecraft.custom:minecraft.talked_to_villager
+scoreboard objectives add bank_option trigger
 scoreboard objectives add bal trigger
 scoreboard objectives add balance dummy
 
 
-#
+##################################################################
+	# Warps #
+##################################################################
 scoreboard objectives add random_warp trigger
 scoreboard objectives add warps trigger
 scoreboard objectives add warp_x dummy
@@ -13,20 +20,26 @@ scoreboard objectives add warp_y dummy
 scoreboard objectives add warp_z dummy
 
 
-#
+##################################################################
+	# Weather #
+##################################################################
 scoreboard objectives add clear trigger
 scoreboard objectives add day trigger
 scoreboard objectives add afternoon trigger
 scoreboard objectives add night trigger
 
 
-#
+##################################################################
+	# Shops #
+##################################################################
 scoreboard objectives add create_shop trigger
 scoreboard objectives add shop_profession trigger
 scoreboard objectives add change_prof trigger
 
 
-#
+##################################################################
+	# Homes #
+##################################################################
 scoreboard objectives add homes trigger
 
 ##################################################################
@@ -65,16 +78,24 @@ scoreboard objectives add home_y3 dummy
 scoreboard objectives add home_z3 dummy
 
 
-#
+##################################################################
+	# Gamemodes #
+##################################################################
 scoreboard objectives add survival trigger
 scoreboard objectives add creative trigger
 scoreboard objectives add spectator trigger
 
-#
+
+##################################################################
+	# Moderators Comamnds #
+##################################################################
 scoreboard objectives add god trigger
 scoreboard objectives add create_warp trigger
 scoreboard objectives add delete_warp trigger
 
-# Setup Spawn:
+
+##################################################################
+	# Developer Commandsw #
+##################################################################
 scoreboard objectives add setspawn trigger
 scoreboard objectives add delspawn trigger
