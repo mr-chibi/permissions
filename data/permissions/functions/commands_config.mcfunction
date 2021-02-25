@@ -30,8 +30,10 @@ execute if score @s ranks > Builder ranks run scoreboard players enable @s after
 execute if score @s ranks > Builder ranks run scoreboard players enable @s night
 
 #
+execute if score @s ranks > Builder ranks run scoreboard players enable @s warp_teleport
 execute if score @s ranks > Builder ranks run scoreboard players enable @s create_warp
 execute if score @s ranks > Builder ranks run scoreboard players enable @s delete_warp
+
 execute if score @s ranks > Builder ranks run scoreboard players enable @s warps
 execute if score @s ranks > Builder ranks run scoreboard players enable @s god
 execute if score @s ranks > Builder ranks run scoreboard players enable @s spectator
