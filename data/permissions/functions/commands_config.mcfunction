@@ -6,7 +6,7 @@ function permissions:commands/bank/update
 ###################################################################################
 # On Load Functions:
 ###################################################################################
-function permissions:commands/functions/shops_update
+execute as @e[type=minecraft:villager,tag=admin_shop,distance=0..5] at @s run function permissions:commands/functions/shops_update
 function permissions:commands/functions/shop_profession
 
 
@@ -45,30 +45,43 @@ execute if score @s ranks > Trusted ranks run scoreboard players enable @s creat
 
 
 ###################################################################################
+# Trusted Command Permissions:
+###################################################################################
+execute if score @s ranks > Member ranks run scoreboard players enable @s random_warp
+
+
+###################################################################################
 # Members Command Permissions:
 ###################################################################################
-execute if score @s ranks >= Guest ranks run scoreboard players enable @s homes
+execute if score @s ranks > Guest ranks run scoreboard players enable @s homes
 
 #
-execute if score @s ranks >= Guest ranks run scoreboard players enable @s home_1
-execute if score @s ranks >= Guest ranks run scoreboard players enable @s sethome_1
-execute if score @s ranks >= Guest ranks run scoreboard players enable @s delhome_1
+execute if score @s ranks > Guest ranks run scoreboard players enable @s home_1
+execute if score @s ranks > Guest ranks run scoreboard players enable @s sethome_1
+execute if score @s ranks > Guest ranks run scoreboard players enable @s delhome_1
 
 #
-execute if score @s ranks >= Guest ranks run scoreboard players enable @s home_2
-execute if score @s ranks >= Guest ranks run scoreboard players enable @s sethome_2
-execute if score @s ranks >= Guest ranks run scoreboard players enable @s delhome_2
+execute if score @s ranks > Guest ranks run scoreboard players enable @s home_2
+execute if score @s ranks > Guest ranks run scoreboard players enable @s sethome_2
+execute if score @s ranks > Guest ranks run scoreboard players enable @s delhome_2
 
 #
-execute if score @s ranks >= Guest ranks run scoreboard players enable @s home_3
-execute if score @s ranks >= Guest ranks run scoreboard players enable @s sethome_3
-execute if score @s ranks >= Guest ranks run scoreboard players enable @s delhome_3
+execute if score @s ranks > Guest ranks run scoreboard players enable @s home_3
+execute if score @s ranks > Guest ranks run scoreboard players enable @s sethome_3
+execute if score @s ranks > Guest ranks run scoreboard players enable @s delhome_3
 
 
 ###################################################################################
-# Guest Command Permissions:
+# Guest Command Tpa:
 ###################################################################################
-execute if score @s ranks >= Guest ranks run scoreboard players enable @s random_warp
+execute if score @s ranks >= Guest ranks run scoreboard players enable @s tparequest
+execute if score @s ranks >= Guest ranks run scoreboard players enable @s tpaccept
+execute if score @s ranks >= Guest ranks run scoreboard players enable @s tpacancel
+
+
+###################################################################################
+# Guest Command Essentials:
+###################################################################################
 execute if score @s ranks >= Guest ranks run scoreboard players enable @s spawn
 execute if score @s ranks >= Guest ranks run scoreboard players enable @s rules
 execute if score @s ranks >= Guest ranks run scoreboard players enable @s bank

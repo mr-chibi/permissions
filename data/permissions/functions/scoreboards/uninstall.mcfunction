@@ -3,12 +3,27 @@
 ###################################################################################
 scoreboard objectives remove ranks
 
+
+#
+scoreboard objectives remove gravestone
+scoreboard objectives remove graves
+scoreboard objectives remove death_x
+scoreboard objectives remove death_y
+scoreboard objectives remove death_z
+
+
+#
+scoreboard objectives remove tparequest
+scoreboard objectives remove tpaccept
+scoreboard objectives remove tpacancel
+
 #
 scoreboard objectives remove spawn
 scoreboard objectives remove rules
 scoreboard objectives remove bank
 scoreboard objectives remove bank_interaction
 scoreboard objectives remove bank_option
+scoreboard objectives remove bank_count
 scoreboard objectives remove bal
 scoreboard objectives remove balance
 
@@ -25,6 +40,7 @@ scoreboard objectives remove night
 
 #
 scoreboard objectives remove random_warp
+scoreboard objectives remove warp_teleport 
 scoreboard objectives remove warps
 scoreboard objectives remove warp_x
 scoreboard objectives remove warp_y

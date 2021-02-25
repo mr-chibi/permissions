@@ -3,7 +3,8 @@ tellraw @s [{"text": "[", "color": "white"}, {"text": "Permissions", "color": "d
 
 
 # Execute as Armorstand check if "Armorstand" matches "Player" Scoreboard then teleport "Player" to Armorstand:
-execute as @e[type=minecraft:armor_stand,tag=home_2] if score @s home2_id = @p home2_id run tp @p @s
+summon minecraft:armor_stand ~ ~ ~ {Tags:["tp_home2"]}
+execute as @e[type=minecraft:armor_stand,tag=tp_home2] at @s run function permissions:commands/homes/tp_home2
 
 #
 scoreboard players set @s[scores={home_2=1..}] home_2 0

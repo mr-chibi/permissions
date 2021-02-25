@@ -4,20 +4,20 @@ scoreboard players enable @s[scores={bank_interaction=1..}] bank_option
 ############################################################################################
 # Bank Interaction [Withdraw]
 ############################################################################################
-tellraw @s[scores={bank_interaction=1..}] [{"text": "[Bank]: ", "color": "green"}, {"text": "WARNING!!! we can only deposit stack at a time! \n", "color": "red"}]
+execute as @e[type=minecraft:villager,tag=Bank,distance=0..2] at @s run tellraw @p[scores={bank_interaction=1..}] [{"text": "[Bank]: ", "color": "green"}, {"text": "WARNING!!! we can only deposit stack at a time! \n", "color": "red"}]
 
 
 ############################################################################################
 # Bank Interaction [Withdraw]
 ############################################################################################
-tellraw @s[scores={bank_interaction=1..}] [{"text": "[Bank Withdraw]: ", "color": "dark_green"}]
-tellraw @s[scores={bank_interaction=1..}] [{"text": "[Withdraw x16] ", "color": "green", "clickEvent":{"action":"run_command","value":"/trigger bank_option set 1"}}, {"text": "[Withdraw x32] ", "color": "green", "clickEvent":{"action":"run_command","value":"/trigger bank_option set 2"}}, {"text": "[Withdraw x64] \n ", "color": "green", "clickEvent":{"action":"run_command","value":"/trigger bank_option set 3"}}]
+execute as @e[type=minecraft:villager,tag=Bank,distance=0..2] at @s run tellraw @p[scores={bank_interaction=1..}] [{"text": "[Bank Withdraw]: ", "color": "dark_green"}]
+execute as @e[type=minecraft:villager,tag=Bank,distance=0..2] at @s run tellraw @p[scores={bank_interaction=1..}] [{"text": "[Withdraw x16] ", "color": "green", "clickEvent":{"action":"run_command","value":"/trigger bank_option set 1"}}, {"text": "[Withdraw x32] ", "color": "green", "clickEvent":{"action":"run_command","value":"/trigger bank_option set 2"}}, {"text": "[Withdraw x64] \n ", "color": "green", "clickEvent":{"action":"run_command","value":"/trigger bank_option set 3"}}]
 
 ############################################################################################
 # Bank Interaction [Deposit]
 ############################################################################################
-tellraw @s[scores={bank_interaction=1..}] [{"text": "[Bank Deposit]: ", "color": "dark_green"}]
-tellraw @s[scores={bank_interaction=1..}] [{"text": "[Deposit x16] ", "color": "yellow", "clickEvent":{"action":"run_command","value":"/trigger bank_option set 4"}}, {"text": "[Deposit x32] ", "color": "yellow", "clickEvent":{"action":"run_command","value":"/trigger bank_option set 5"}}, {"text": "[Deposit x64] ", "color": "yellow", "clickEvent":{"action":"run_command","value":"/trigger bank_option set 6"}}]
+execute as @e[type=minecraft:villager,tag=Bank,distance=0..2] at @s run tellraw @p[scores={bank_interaction=1..}] [{"text": "[Bank Deposit]: ", "color": "dark_green"}]
+execute as @e[type=minecraft:villager,tag=Bank,distance=0..2] at @s run tellraw @p[scores={bank_interaction=1..}] [{"text": "[Deposit x16] ", "color": "yellow", "clickEvent":{"action":"run_command","value":"/trigger bank_option set 4"}}, {"text": "[Deposit x32] ", "color": "yellow", "clickEvent":{"action":"run_command","value":"/trigger bank_option set 5"}}, {"text": "[Deposit x64] ", "color": "yellow", "clickEvent":{"action":"run_command","value":"/trigger bank_option set 6"}}]
 
 
 
@@ -25,7 +25,7 @@ tellraw @s[scores={bank_interaction=1..}] [{"text": "[Deposit x16] ", "color": "
 # Withdraw 16 Coins
 ############################################################################################
 execute as @s[scores={bank_option=1}] unless entity @s[scores={balance=16..}] run tellraw @s [{"text": "[Bank]: ", "color": "green"}, {"text": "Error, you don't have 16 coins to in your bank account!", "color": "red"}]
-execute as @s[scores={bank_option=1}] if entity @s[scores={balance=16..}] run give @s minecraft:gold_nugget{server_currency:1b} 16
+execute as @s[scores={bank_option=1}] if entity @s[scores={balance=16..}] run give @s minecraft:gold_nugget{server_currency:1b, display:{Name:"{\"text\": \"Coins\", \"color\": \"yellow\", \"bold\": true}"}} 16
 execute as @s[scores={bank_option=1}] if entity @s[scores={balance=16..}] run scoreboard players remove @s balance 16
 
 
@@ -33,7 +33,7 @@ execute as @s[scores={bank_option=1}] if entity @s[scores={balance=16..}] run sc
 # Withdraw 32 Coins
 ############################################################################################
 execute as @s[scores={bank_option=2}] unless entity @s[scores={balance=32..}] run tellraw @s [{"text": "[Bank]: ", "color": "green"}, {"text": "Error, you don't have 32 coins to in your bank account!", "color": "red"}]
-execute as @s[scores={bank_option=2}] if entity @s[scores={balance=32..}] run give @s minecraft:gold_nugget{server_currency:1b} 32
+execute as @s[scores={bank_option=2}] if entity @s[scores={balance=32..}] run give @s minecraft:gold_nugget{server_currency:1b, display:{Name:"{\"text\": \"Coins\", \"color\": \"yellow\", \"bold\": true}"}} 32
 execute as @s[scores={bank_option=2}] if entity @s[scores={balance=32..}] run scoreboard players remove @s balance 32
 
 
@@ -42,7 +42,7 @@ execute as @s[scores={bank_option=2}] if entity @s[scores={balance=32..}] run sc
 # Withdraw 64 Coins
 ############################################################################################
 execute as @s[scores={bank_option=3}] unless entity @s[scores={balance=64..}] run tellraw @s [{"text": "[Bank]: ", "color": "green"}, {"text": "Error, you don't have 64 coins to in your bank account!", "color": "red"}]
-execute as @s[scores={bank_option=3}] if entity @s[scores={balance=64..}] run give @s minecraft:gold_nugget{server_currency:1b} 64
+execute as @s[scores={bank_option=3}] if entity @s[scores={balance=64..}] run give @s minecraft:gold_nugget{server_currency:1b, display:{Name:"{\"text\": \"Coins\", \"color\": \"yellow\", \"bold\": true}"}} 64
 execute as @s[scores={bank_option=3}] if entity @s[scores={balance=64..}] run scoreboard players remove @s balance 64
 
 

@@ -9,6 +9,7 @@ execute as @s[scores={shop_profession=1..}] run function permissions:commands/sh
 # Mod Warps Commands:
 ###################################################################################
 execute as @s[scores={warps=1..}] run function permissions:commands/warps/list
+execute as @s[scores={warp_teleport=1..}] run function permissions:commands/warps/teleport
 execute as @s[scores={create_warp=1..}, nbt={Dimension:"minecraft:overworld"}] run function permissions:commands/warps/create_warp
 execute as @s[scores={delete_warp=1..}] run function permissions:commands/warps/delete_warp
 

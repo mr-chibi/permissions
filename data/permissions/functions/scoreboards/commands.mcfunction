@@ -1,4 +1,10 @@
 ##################################################################
+	# Sleep #
+##################################################################
+scoreboard objectives add players_slept minecraft.custom:minecraft.sleep_in_bed
+
+
+##################################################################
 	# Essentials #
 ##################################################################
 scoreboard objectives add spawn trigger
@@ -6,14 +12,34 @@ scoreboard objectives add rules trigger
 scoreboard objectives add bank trigger
 scoreboard objectives add bank_interaction minecraft.custom:minecraft.talked_to_villager
 scoreboard objectives add bank_option trigger
+scoreboard objectives add bank_count dummy
 scoreboard objectives add bal trigger
 scoreboard objectives add balance dummy
+
+
+##################################################################
+	# Gravestone tp #
+##################################################################
+scoreboard objectives add gravestone trigger
+scoreboard objectives add graves deathCount
+scoreboard objectives add grave_x dummy
+scoreboard objectives add grave_y dummy
+scoreboard objectives add grave_z dummy
+
+
+##################################################################
+	# Tpa / Tpaccept #
+##################################################################
+scoreboard objectives add tparequest trigger
+scoreboard objectives add tpaccept trigger
+scoreboard objectives add tpacancel trigger
 
 
 ##################################################################
 	# Warps #
 ##################################################################
 scoreboard objectives add random_warp trigger
+scoreboard objectives add warp_teleport trigger
 scoreboard objectives add warps trigger
 scoreboard objectives add warp_x dummy
 scoreboard objectives add warp_y dummy

@@ -5,15 +5,9 @@ tellraw @s [{"text": "[", "color": "white"}, {"text": "Permissions", "color": "d
 
 
 ##############################################################
-	# Reset Home:
-##############################################################
-execute as @e[type=minecraft:armor_stand,tag=home_3] if score @s home3_id = @p home3_id run kill @s
-
-
-##############################################################
 	# Summon Armorstand:
 ##############################################################
-summon minecraft:armor_stand ~ ~ ~ {CustomName:"{\"text\": \"Home 3\"}", CustomNameVisible:1b, Invisible:1b, Tags:["home_3"]}
+summon minecraft:armor_stand ~ ~ ~ {Tags:["home_3"]}
 
 
 ##############################################################
@@ -29,6 +23,12 @@ scoreboard players operation @e[type=minecraft:armor_stand,limit=1,distance=0..2
 execute store result score @s home_x3 run data get entity @s Pos[0]
 execute store result score @s home_y3 run data get entity @s Pos[1]
 execute store result score @s home_z3 run data get entity @s Pos[2]
+
+
+##############################################################
+	# Kill Armorstand:
+##############################################################
+kill @e[type=minecraft:armor_stand,tag=home_3]
 
 
 ##############################################################
