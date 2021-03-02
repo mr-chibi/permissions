@@ -2,9 +2,7 @@
 scoreboard players reset @s home_x1
 scoreboard players reset @s home_y1
 scoreboard players reset @s home_z1
-
-#
-execute as @e[type=minecraft:armor_stand,tag=home_1] if score @s home1_id = @p home1_id run kill @s
+scoreboard players reset @s home_dim1
 
 # Successful delete home message:
 tellraw @s [{"text": "[", "color": "white"}, {"text": "Permissions", "color": "dark_red"}, {"text": "]: ", "color": "white"}, {"text": "Deleted Home 1!", "color": "green"}]

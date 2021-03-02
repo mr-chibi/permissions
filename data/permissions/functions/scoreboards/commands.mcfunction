@@ -22,6 +22,7 @@ scoreboard objectives add balance dummy
 ##################################################################
 scoreboard objectives add gravestone trigger
 scoreboard objectives add graves deathCount
+scoreboard objectives add grave_dimension dummy
 scoreboard objectives add grave_x dummy
 scoreboard objectives add grave_y dummy
 scoreboard objectives add grave_z dummy
@@ -75,6 +76,7 @@ scoreboard objectives add home1_id dummy
 scoreboard objectives add home_1 trigger
 scoreboard objectives add sethome_1 trigger
 scoreboard objectives add delhome_1 trigger
+scoreboard objectives add home_dim1 dummy
 scoreboard objectives add home_x1 dummy
 scoreboard objectives add home_y1 dummy
 scoreboard objectives add home_z1 dummy
@@ -87,6 +89,7 @@ scoreboard objectives add home2_id dummy
 scoreboard objectives add home_2 trigger
 scoreboard objectives add sethome_2 trigger
 scoreboard objectives add delhome_2 trigger
+scoreboard objectives add home_dim2 dummy
 scoreboard objectives add home_x2 dummy
 scoreboard objectives add home_y2 dummy
 scoreboard objectives add home_z2 dummy
@@ -99,6 +102,7 @@ scoreboard objectives add home3_id dummy
 scoreboard objectives add home_3 trigger
 scoreboard objectives add sethome_3 trigger
 scoreboard objectives add delhome_3 trigger
+scoreboard objectives add home_dim3 dummy
 scoreboard objectives add home_x3 dummy
 scoreboard objectives add home_y3 dummy
 scoreboard objectives add home_z3 dummy

@@ -7,6 +7,7 @@ scoreboard objectives remove ranks
 #
 scoreboard objectives remove gravestone
 scoreboard objectives remove graves
+scoreboard objectives remove grave_dimension
 scoreboard objectives remove death_x
 scoreboard objectives remove death_y
 scoreboard objectives remove death_z
@@ -55,6 +56,7 @@ scoreboard objectives remove home1_id
 scoreboard objectives remove home_1
 scoreboard objectives remove sethome_1
 scoreboard objectives remove delhome_1
+scoreboard objectives remove home_dim1
 scoreboard objectives remove home_x1
 scoreboard objectives remove home_y1
 scoreboard objectives remove home_z1
@@ -66,6 +68,7 @@ scoreboard objectives remove home2_id
 scoreboard objectives remove home_2
 scoreboard objectives remove sethome_2
 scoreboard objectives remove delhome_2
+scoreboard objectives remove home_dim2
 scoreboard objectives remove home_x2
 scoreboard objectives remove home_y2
 scoreboard objectives remove home_z2
@@ -77,6 +80,7 @@ scoreboard objectives remove home3_id
 scoreboard objectives remove home_3
 scoreboard objectives remove sethome_3
 scoreboard objectives remove delhome_3
+scoreboard objectives remove home_dim3
 scoreboard objectives remove home_x3
 scoreboard objectives remove home_y3
 scoreboard objectives remove home_z3

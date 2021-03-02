@@ -26,6 +26,14 @@ execute store result score @s home_z1 run data get entity @s Pos[2]
 
 
 ##############################################################
+	# Store players Dimension:
+##############################################################
+execute if entity @s[nbt={Dimension:"minecraft:overworld"}] run scoreboard players set @s home_dim1 0
+execute if entity @s[nbt={Dimension:"minecraft:the_nether"}] run scoreboard players set @s home_dim1 1
+execute if entity @s[nbt={Dimension:"minecraft:the_end"}] run scoreboard players set @s home_dim1 2
+
+
+##############################################################
 	# Kill Armorstand:
 ##############################################################
 kill @e[type=minecraft:armor_stand,tag=home_1]
