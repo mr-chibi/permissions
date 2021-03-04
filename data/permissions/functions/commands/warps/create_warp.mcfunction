@@ -5,6 +5,14 @@ summon minecraft:armor_stand ~ ~ ~ {CustomName:"{\"text\": \"rename\", \"color\"
 
 
 ###################################################################################
+# Summon Warp:
+###################################################################################
+scoreboard players add @e[type=minecraft:armor_stand,tag=warps] warp 0
+scoreboard players operation @e[type=minecraft:armor_stand,tag=warps,limit=1] warp = total_warps warp
+scoreboard players add @e[type=minecraft:armor_stand,tag=warps] warp 1
+
+
+###################################################################################
 # Store Warp Coords:
 ###################################################################################
 execute as @e[type=minecraft:armor_stand,tag=warps] store result score @s warp_x run data get entity @s Pos[0]

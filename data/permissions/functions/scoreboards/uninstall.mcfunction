@@ -41,7 +41,7 @@ scoreboard objectives remove night
 
 #
 scoreboard objectives remove random_warp
-scoreboard objectives remove warp_teleport 
+scoreboard objectives remove warp 
 scoreboard objectives remove warps
 scoreboard objectives remove warp_x
 scoreboard objectives remove warp_y

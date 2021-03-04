@@ -15,6 +15,7 @@ scoreboard objectives add bank_option trigger
 scoreboard objectives add bank_count dummy
 scoreboard objectives add bal trigger
 scoreboard objectives add balance dummy
+scoreboard objectives add showitem trigger
 
 
 ##################################################################
@@ -39,8 +40,11 @@ scoreboard objectives add tpacancel trigger
 ##################################################################
 	# Warps #
 ##################################################################
+scoreboard players add total_warps warps 0
+
+
 scoreboard objectives add random_warp trigger
-scoreboard objectives add warp_teleport trigger
+scoreboard objectives add warp trigger
 scoreboard objectives add warps trigger
 scoreboard objectives add warp_x dummy
 scoreboard objectives add warp_y dummy

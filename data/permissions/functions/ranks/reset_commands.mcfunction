@@ -14,6 +14,7 @@ execute if score @s ranks < Mod ranks run scoreboard players reset @s shop_profe
 #
 execute if score @s ranks < Mod ranks run scoreboard players reset @s create_warp
 execute if score @s ranks < Mod ranks run scoreboard players reset @s delete_warp
+execute if score @s ranks < Mod ranks run scoreboard players reset @s warp
 execute if score @s ranks < Mod ranks run scoreboard players reset @s warps
 
 #
@@ -34,6 +35,7 @@ execute if score @s ranks < Builder ranks run scoreboard players reset @s specta
 # Reset Trusted Commands:
 ###################################################################################
 execute if score @s ranks < Trusted ranks run scoreboard players reset @s random_warp
+execute if score @s ranks < Trusted ranks run scoreboard players reset @s showitem
 execute if score @s ranks < Trusted ranks run scoreboard players reset @s survival
 execute if score @s ranks < Trusted ranks run scoreboard players reset @s creative
 

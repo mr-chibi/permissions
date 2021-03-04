@@ -9,7 +9,6 @@ function permissions:commands/bank/update
 execute as @e[type=minecraft:villager,tag=admin_shop,distance=0..5] at @s run function permissions:commands/functions/shops_update
 function permissions:commands/functions/shop_profession
 
-
 ###################################################################################
 # Developer Command Permissions:
 ###################################################################################
@@ -30,10 +29,9 @@ execute if score @s ranks > Builder ranks run scoreboard players enable @s after
 execute if score @s ranks > Builder ranks run scoreboard players enable @s night
 
 #
-execute if score @s ranks > Builder ranks run scoreboard players enable @s warp_teleport
 execute if score @s ranks > Builder ranks run scoreboard players enable @s create_warp
 execute if score @s ranks > Builder ranks run scoreboard players enable @s delete_warp
-
+execute if score @s ranks > Builder ranks run scoreboard players enable @s warp
 execute if score @s ranks > Builder ranks run scoreboard players enable @s warps
 execute if score @s ranks > Builder ranks run scoreboard players enable @s god
 execute if score @s ranks > Builder ranks run scoreboard players enable @s spectator
@@ -50,6 +48,7 @@ execute if score @s ranks > Trusted ranks run scoreboard players enable @s creat
 # Trusted Command Permissions:
 ###################################################################################
 execute if score @s ranks > Member ranks run scoreboard players enable @s random_warp
+execute if score @s ranks > Member ranks run scoreboard players enable @s showitem
 
 
 ###################################################################################
