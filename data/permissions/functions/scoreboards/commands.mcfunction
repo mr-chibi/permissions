@@ -1,10 +1,4 @@
 ##################################################################
-	# Sleep #
-##################################################################
-scoreboard objectives add players_slept minecraft.custom:minecraft.sleep_in_bed
-
-
-##################################################################
 	# Essentials #
 ##################################################################
 scoreboard objectives add spawn trigger
@@ -17,6 +11,8 @@ scoreboard objectives add bal trigger
 scoreboard objectives add balance dummy
 scoreboard objectives add showitem trigger
 
+#
+scoreboard objectives add gui_create trigger
 
 ##################################################################
 	# Gravestone tp #
@@ -41,14 +37,20 @@ scoreboard objectives add tpacancel trigger
 	# Warps #
 ##################################################################
 scoreboard players add total_warps warps 0
-
-
 scoreboard objectives add random_warp trigger
 scoreboard objectives add warp trigger
 scoreboard objectives add warps trigger
 scoreboard objectives add warp_x dummy
 scoreboard objectives add warp_y dummy
 scoreboard objectives add warp_z dummy
+
+
+##################################################################
+	# Warps Portals #
+##################################################################
+scoreboard objectives add facing_portal dummy
+scoreboard objectives add create_portal trigger
+scoreboard objectives add edit_portal trigger
 
 
 ##################################################################

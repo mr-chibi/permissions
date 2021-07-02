@@ -19,6 +19,10 @@ execute if score @s ranks > Mod ranks run scoreboard players enable @s delspawn
 ###################################################################################
 # Mod Command Permissions:
 ###################################################################################
+execute if score @s ranks > Builder ranks run scoreboard players enable @s gui_create
+execute if score @s ranks > Builder ranks run scoreboard players enable @s gui_remove
+
+
 execute if score @s ranks > Builder ranks run scoreboard players enable @s create_shop
 execute if score @s ranks > Builder ranks run scoreboard players enable @s shop_profession
 
@@ -33,6 +37,12 @@ execute if score @s ranks > Builder ranks run scoreboard players enable @s creat
 execute if score @s ranks > Builder ranks run scoreboard players enable @s delete_warp
 execute if score @s ranks > Builder ranks run scoreboard players enable @s warp
 execute if score @s ranks > Builder ranks run scoreboard players enable @s warps
+
+#
+execute if score @s ranks > Builder ranks run scoreboard players enable @s create_portal
+execute if score @s ranks > Builder ranks run scoreboard players enable @s edit_portal
+
+#
 execute if score @s ranks > Builder ranks run scoreboard players enable @s god
 execute if score @s ranks > Builder ranks run scoreboard players enable @s spectator
 

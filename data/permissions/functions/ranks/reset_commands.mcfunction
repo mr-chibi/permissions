@@ -8,6 +8,11 @@ execute if score @s ranks < Dev ranks run scoreboard players reset @s delspawn
 ###################################################################################
 # Reset Mods Commands:
 ###################################################################################
+execute if score @s ranks < Mod ranks run scoreboard players reset @s gui_create
+execute if score @s ranks < Mod ranks run scoreboard players reset @s gui_remove
+
+
+#
 execute if score @s ranks < Mod ranks run scoreboard players reset @s create_shop
 execute if score @s ranks < Mod ranks run scoreboard players reset @s shop_profession
 
@@ -16,6 +21,11 @@ execute if score @s ranks < Mod ranks run scoreboard players reset @s create_war
 execute if score @s ranks < Mod ranks run scoreboard players reset @s delete_warp
 execute if score @s ranks < Mod ranks run scoreboard players reset @s warp
 execute if score @s ranks < Mod ranks run scoreboard players reset @s warps
+
+#
+execute if score @s ranks < Mod ranks run scoreboard players reset @s create_portal
+execute if score @s ranks < Mod ranks run scoreboard players reset @s edit_portal
+
 
 #
 execute if score @s ranks < Mod ranks run scoreboard players reset @s clear

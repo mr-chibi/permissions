@@ -46,6 +46,6 @@ clear @s minecraft:dragon_egg
 clear @s minecraft:red_mushroom_block
 clear @s minecraft:brown_mushroom_block
 clear @s minecraft:mushroom_stem
-clear @s minecraft:grass_path
+clear @s minecraft:dirt_path
 clear @s minecraft:structure_block
 clear @s minecraft:structure_void

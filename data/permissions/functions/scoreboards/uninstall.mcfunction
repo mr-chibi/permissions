@@ -8,9 +8,9 @@ scoreboard objectives remove ranks
 scoreboard objectives remove gravestone
 scoreboard objectives remove graves
 scoreboard objectives remove grave_dimension
-scoreboard objectives remove death_x
-scoreboard objectives remove death_y
-scoreboard objectives remove death_z
+scoreboard objectives remove grave_x
+scoreboard objectives remove grave_y
+scoreboard objectives remove grave_z
 
 
 #
@@ -27,6 +27,9 @@ scoreboard objectives remove bank_option
 scoreboard objectives remove bank_count
 scoreboard objectives remove bal
 scoreboard objectives remove balance
+scoreboard objectives remove showitem
+scoreboard objectives remove players_slept
+
 
 #
 scoreboard objectives remove create_shop
@@ -39,6 +42,7 @@ scoreboard objectives remove day
 scoreboard objectives remove afternoon
 scoreboard objectives remove night
 
+
 #
 scoreboard objectives remove random_warp
 scoreboard objectives remove warp 
@@ -48,6 +52,16 @@ scoreboard objectives remove warp_y
 scoreboard objectives remove warp_z
 scoreboard objectives remove delete_warp
 
+#
+scoreboard objectives remove facing_portal
+scoreboard objectives remove create_portal
+scoreboard objectives remove edit_portal
+
+
+##################################################################
+	# Homes #
+##################################################################
+scoreboard objectives remove homes
 
 ##################################################################
 	# Homes 1 #
@@ -94,6 +108,10 @@ scoreboard objectives remove spectator
 #
 scoreboard objectives remove god
 scoreboard objectives remove create_warp
+
+#
+scoreboard objectives remove gui_create
+
 
 # Setup Spawn:
 scoreboard objectives remove setspawn
