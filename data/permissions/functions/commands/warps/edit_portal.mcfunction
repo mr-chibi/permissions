@@ -127,6 +127,49 @@ execute as @a at @s[scores={facing_portal=1..}] run execute as @e[type=minecraft
 execute as @a at @s[scores={facing_portal=1..}] run execute as @e[type=minecraft:armor_stand,tag=warps] if score @s warp = @p edit_portal run execute as @s positioned as @p run data modify block ^ ^ ^-5 ExitPortal.Z set from entity @s Pos[2]
 
 
+##########################################################
+#	Exact Teleport Value
+##########################################################
+execute as @a at @s[scores={facing_portal=1..}] run execute as @e[type=minecraft:armor_stand,tag=warps] if score @s warp = @p edit_portal run execute as @s positioned as @p run data modify block ^1 ^ ^ ExactTeleport set value 1
+execute as @a at @s[scores={facing_portal=1..}] run execute as @e[type=minecraft:armor_stand,tag=warps] if score @s warp = @p edit_portal run execute as @s positioned as @p run data modify block ^ ^1 ^ ExactTeleport set value 1
+execute as @a at @s[scores={facing_portal=1..}] run execute as @e[type=minecraft:armor_stand,tag=warps] if score @s warp = @p edit_portal run execute as @s positioned as @p run data modify block ^ ^ ^1 ExactTeleport set value 1
+execute as @a at @s[scores={facing_portal=1..}] run execute as @e[type=minecraft:armor_stand,tag=warps] if score @s warp = @p edit_portal run execute as @s positioned as @p run data modify block ^-1 ^ ^ ExactTeleport set value 1
+execute as @a at @s[scores={facing_portal=1..}] run execute as @e[type=minecraft:armor_stand,tag=warps] if score @s warp = @p edit_portal run execute as @s positioned as @p run data modify block ^ ^-1 ^ ExactTeleport set value 1
+execute as @a at @s[scores={facing_portal=1..}] run execute as @e[type=minecraft:armor_stand,tag=warps] if score @s warp = @p edit_portal run execute as @s positioned as @p run data modify block ^ ^ ^-1 ExactTeleport set value 1
+
+#
+execute as @a at @s[scores={facing_portal=1..}] run execute as @e[type=minecraft:armor_stand,tag=warps] if score @s warp = @p edit_portal run execute as @s positioned as @p run data modify block ^2 ^ ^ ExactTeleport set value 1
+execute as @a at @s[scores={facing_portal=1..}] run execute as @e[type=minecraft:armor_stand,tag=warps] if score @s warp = @p edit_portal run execute as @s positioned as @p run data modify block ^ ^2 ^ ExactTeleport set value 1
+execute as @a at @s[scores={facing_portal=1..}] run execute as @e[type=minecraft:armor_stand,tag=warps] if score @s warp = @p edit_portal run execute as @s positioned as @p run data modify block ^ ^ ^2 ExactTeleport set value 1
+execute as @a at @s[scores={facing_portal=1..}] run execute as @e[type=minecraft:armor_stand,tag=warps] if score @s warp = @p edit_portal run execute as @s positioned as @p run data modify block ^-2 ^ ^ ExactTeleport set value 1
+execute as @a at @s[scores={facing_portal=1..}] run execute as @e[type=minecraft:armor_stand,tag=warps] if score @s warp = @p edit_portal run execute as @s positioned as @p run data modify block ^ ^-2 ^ ExactTeleport set value 1
+execute as @a at @s[scores={facing_portal=1..}] run execute as @e[type=minecraft:armor_stand,tag=warps] if score @s warp = @p edit_portal run execute as @s positioned as @p run data modify block ^ ^ ^-2 ExactTeleport set value 1
+
+#
+execute as @a at @s[scores={facing_portal=1..}] run execute as @e[type=minecraft:armor_stand,tag=warps] if score @s warp = @p edit_portal run execute as @s positioned as @p run data modify block ^3 ^ ^ ExactTeleport set value 1
+execute as @a at @s[scores={facing_portal=1..}] run execute as @e[type=minecraft:armor_stand,tag=warps] if score @s warp = @p edit_portal run execute as @s positioned as @p run data modify block ^ ^3 ^ ExactTeleport set value 1
+execute as @a at @s[scores={facing_portal=1..}] run execute as @e[type=minecraft:armor_stand,tag=warps] if score @s warp = @p edit_portal run execute as @s positioned as @p run data modify block ^ ^ ^3 ExactTeleport set value 1
+execute as @a at @s[scores={facing_portal=1..}] run execute as @e[type=minecraft:armor_stand,tag=warps] if score @s warp = @p edit_portal run execute as @s positioned as @p run data modify block ^-3 ^ ^ ExactTeleport set value 1
+execute as @a at @s[scores={facing_portal=1..}] run execute as @e[type=minecraft:armor_stand,tag=warps] if score @s warp = @p edit_portal run execute as @s positioned as @p run data modify block ^ ^-3 ^ ExactTeleport set value 1
+execute as @a at @s[scores={facing_portal=1..}] run execute as @e[type=minecraft:armor_stand,tag=warps] if score @s warp = @p edit_portal run execute as @s positioned as @p run data modify block ^ ^ ^-3 ExactTeleport set value 1
+
+#
+execute as @a at @s[scores={facing_portal=1..}] run execute as @e[type=minecraft:armor_stand,tag=warps] if score @s warp = @p edit_portal run execute as @s positioned as @p run data modify block ^4 ^ ^ ExactTeleport set value 1
+execute as @a at @s[scores={facing_portal=1..}] run execute as @e[type=minecraft:armor_stand,tag=warps] if score @s warp = @p edit_portal run execute as @s positioned as @p run data modify block ^ ^4 ^ ExactTeleport set value 1
+execute as @a at @s[scores={facing_portal=1..}] run execute as @e[type=minecraft:armor_stand,tag=warps] if score @s warp = @p edit_portal run execute as @s positioned as @p run data modify block ^ ^ ^4 ExactTeleport set value 1
+execute as @a at @s[scores={facing_portal=1..}] run execute as @e[type=minecraft:armor_stand,tag=warps] if score @s warp = @p edit_portal run execute as @s positioned as @p run data modify block ^-4 ^ ^ ExactTeleport set value 1
+execute as @a at @s[scores={facing_portal=1..}] run execute as @e[type=minecraft:armor_stand,tag=warps] if score @s warp = @p edit_portal run execute as @s positioned as @p run data modify block ^ ^-4 ^ ExactTeleport set value 1
+execute as @a at @s[scores={facing_portal=1..}] run execute as @e[type=minecraft:armor_stand,tag=warps] if score @s warp = @p edit_portal run execute as @s positioned as @p run data modify block ^ ^ ^-4 ExactTeleport set value 1
+
+#
+execute as @a at @s[scores={facing_portal=1..}] run execute as @e[type=minecraft:armor_stand,tag=warps] if score @s warp = @p edit_portal run execute as @s positioned as @p run data modify block ^5 ^ ^ ExactTeleport set value 1
+execute as @a at @s[scores={facing_portal=1..}] run execute as @e[type=minecraft:armor_stand,tag=warps] if score @s warp = @p edit_portal run execute as @s positioned as @p run data modify block ^ ^5 ^ ExactTeleport set value 1
+execute as @a at @s[scores={facing_portal=1..}] run execute as @e[type=minecraft:armor_stand,tag=warps] if score @s warp = @p edit_portal run execute as @s positioned as @p run data modify block ^ ^ ^5 ExactTeleport set value 1
+execute as @a at @s[scores={facing_portal=1..}] run execute as @e[type=minecraft:armor_stand,tag=warps] if score @s warp = @p edit_portal run execute as @s positioned as @p run data modify block ^-5 ^ ^ ExactTeleport set value 1
+execute as @a at @s[scores={facing_portal=1..}] run execute as @e[type=minecraft:armor_stand,tag=warps] if score @s warp = @p edit_portal run execute as @s positioned as @p run data modify block ^ ^-5 ^ ExactTeleport set value 1
+execute as @a at @s[scores={facing_portal=1..}] run execute as @e[type=minecraft:armor_stand,tag=warps] if score @s warp = @p edit_portal run execute as @s positioned as @p run data modify block ^ ^ ^-5 ExactTeleport set value 1
+
+
 ###################################################################################
 # Reset:
 ###################################################################################
