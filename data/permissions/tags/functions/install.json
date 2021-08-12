@@ -1,7 +1,7 @@
 {
 	"values": [
 		"permissions:scoreboards/ranks",
-		"permissions:scoreboards/permissions",
-		"permissions:scoreboards/commands"
+		"permissions:scoreboards/commands",
+		"permissions:scoreboards/permissions"
 	]
 }
