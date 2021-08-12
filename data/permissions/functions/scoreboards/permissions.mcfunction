@@ -82,5 +82,6 @@ scoreboard players add tparequest permissions 0
 ###################################################################################
 scoreboard players add homes permissions 0
 scoreboard players add bal permissions 0
+scoreboard players add bank permissions 0
 scoreboard players add rules permissions 0
 scoreboard players add spawn permissions 0

@@ -82,5 +82,6 @@ scoreboard players set tparequest permissions 2
 ###################################################################################
 scoreboard players set homes permissions 1
 scoreboard players set bal permissions 1
+scoreboard players set bank permissions 1
 scoreboard players set rules permissions 1
 scoreboard players set spawn permissions 1
