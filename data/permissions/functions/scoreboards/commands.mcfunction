@@ -1,6 +1,12 @@
 ##################################################################
 	# Guest Commands #
 ##################################################################
+scoreboard objectives add rank dummy
+scoreboard objectives add permissions dummy
+
+##################################################################
+	# Guest Commands #
+##################################################################
 scoreboard objectives add spawn trigger
 scoreboard objectives add spawn_cooldown dummy
 

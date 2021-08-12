@@ -2,6 +2,7 @@
 	# User Ranks #
 ##################################################################
 scoreboard objectives remove rank
+scoreboard objectives remove permissions
 
 ##################################################################
 	# Guest Commands #

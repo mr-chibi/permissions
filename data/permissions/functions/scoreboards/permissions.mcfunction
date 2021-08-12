@@ -1,7 +1,7 @@
 ###################################################################################
 # Owner Commands:
 ###################################################################################
-scoreboard players add addspawn permissions 0
+scoreboard players add setspawn permissions 0
 
 ###################################################################################
 # Admin Permissions:
@@ -56,17 +56,17 @@ scoreboard players add showitem permissions 0
 # Member Homes Commands:
 ###################################################################################
 scoreboard players add home_3 permissions 0
-scoreboard players add addhome_3 permissions 0
+scoreboard players add sethome_3 permissions 0
 scoreboard players add delhome_3 permissions 0
 
 #
 scoreboard players add home_2 permissions 0
-scoreboard players add addhome_2 permissions 0
+scoreboard players add sethome_2 permissions 0
 scoreboard players add delhome_2 permissions 0
 
 #
 scoreboard players add home_1 permissions 0
-scoreboard players add addhome_1 permissions 0
+scoreboard players add sethome_1 permissions 0
 scoreboard players add delhome_1 permissions 0
 
 
