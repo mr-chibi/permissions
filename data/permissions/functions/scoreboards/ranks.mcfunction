@@ -1,52 +1,54 @@
-# create variables:
-scoreboard objectives add ranks dummy
-
 # Setup Constants:
-scoreboard players set Guest ranks 0
-scoreboard players set Member ranks 1
-scoreboard players set Trusted ranks 2
-scoreboard players set Supporter ranks 3
-scoreboard players set Jr_builder ranks 4
-scoreboard players set Builder ranks 5
-scoreboard players set Mod ranks 6
-scoreboard players set Dev ranks 7
+scoreboard players set guest rank 1
+scoreboard players set member rank 2
+scoreboard players set trusted rank 3
+scoreboard players set supporter rank 4
+scoreboard players set builder rank 5
+scoreboard players set mod rank 6
+scoreboard players set admin rank 7
+scoreboard players set dev rank 8
+scoreboard players set owner rank 9
 
 # Create Ranks:
-team add Guest
-team add Member
-team add Trusted
-team add Supporter
-team add Jr_builder
-team add Builder
-team add Mod
-team add Dev
+team add guest
+team add member
+team add trusted
+team add supporter
+team add builder
+team add mod
+team add admin
+team add dev
+team add owner
 
 # Setup "Rank" Names:
-team modify Guest displayName "Guest"
-team modify Member displayName "Member"
-team modify Trusted displayName "Trusted"
-team modify Supporter displayName "Supporter"
-team modify Jr_builder displayName "Jr_builder"
-team modify Builder displayName "Builder"
-team modify Mod displayName "Moderator"
-team modify Dev displayName "Developer"
+team modify guest displayName "Guest"
+team modify member displayName "Member"
+team modify trusted displayName "Trusted"
+team modify supporter displayName "Supporter"
+team modify builder displayName "Builder"
+team modify mod displayName "Moderator"
+team modify admin displayName "Admin"
+team modify dev displayName "Developer"
+team modify owner displayName "Owner"
 
 # Rank "Name" Colors:
-team modify Guest color gray
-team modify Member color gray
-team modify Trusted color gray
-team modify Supporter color gray
-team modify Jr_builder color gray
-team modify Builder color gray
-team modify Mod color gray
-team modify Dev color gray
+team modify guest color gray
+team modify member color gray
+team modify trusted color gray
+team modify supporter color gray
+team modify builder color gray
+team modify mod color gray
+team modify admin color gray
+team modify dev color gray
+team modify owner color gray
 
 # Update Rank prefix:
-team modify Guest prefix [{"text": "[", "color": "white"}, {"text": "Guest", "color": "light_purple"}, {"text": "] ", "color": "white"}]
-team modify Member prefix [{"text": "[", "color": "white"}, {"text": "Member", "color": "dark_green"}, {"text": "] ", "color": "white"}]
-team modify Trusted prefix [{"text": "[", "color": "white"}, {"text": "Trusted", "color": "aqua"}, {"text": "] ", "color": "white"}]
-team modify Supporter prefix [{"text": "[", "color": "white"}, {"text": "Supporter", "color": "dark_purple"}, {"text": "] ", "color": "white"}]
-team modify Jr_builder prefix [{"text": "[", "color": "white"}, {"text": "Jr_builder", "color": "red"}, {"text": "] ", "color": "white"}]
-team modify Builder prefix [{"text": "[", "color": "white"}, {"text": "Builder", "color": "dark_red"}, {"text": "] ", "color": "white"}]
-team modify Mod prefix [{"text": "[", "color": "white"}, {"text": "Moderator", "color": "yellow"}, {"text": "] ", "color": "white"}]
-team modify Dev prefix [{"text": "[", "color": "white"}, {"text": "Developer", "color": "blue"}, {"text": "] ", "color": "white"}]
+team modify guest prefix [{"text": "[", "color": "white"}, {"text": "Guest", "color": "#FF408B"}, {"text": "] ", "color": "white"}]
+team modify member prefix [{"text": "[", "color": "white"}, {"text": "Member", "color": "#1EB42F"}, {"text": "] ", "color": "white"}]
+team modify trusted prefix [{"text": "[", "color": "white"}, {"text": "Trusted", "color": "#30E9E5"}, {"text": "] ", "color": "white"}]
+team modify supporter prefix [{"text": "[", "color": "white"}, {"text": "Supporter", "color": "#B25FFF"}, {"text": "] ", "color": "white"}]
+team modify builder prefix [{"text": "[", "color": "white"}, {"text": "Builder", "color": "#8F71FF"}, {"text": "] ", "color": "white"}]
+team modify mod prefix [{"text": "[", "color": "white"}, {"text": "Moderator", "color": "#F3CF28"}, {"text": "] ", "color": "white"}]
+team modify admin prefix [{"text": "[", "color": "white"}, {"text": "Admin", "color": "#DD0303"}, {"text": "] ", "color": "white"}]
+team modify dev prefix [{"text": "[", "color": "white"}, {"text": "Developer", "color": "#287EF3"}, {"text": "] ", "color": "white"}]
+team modify owner prefix [{"text": "[", "color": "white"}, {"text": "Owner", "color": "#EA123E"}, {"text": "] ", "color": "white"}]

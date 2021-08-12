@@ -1,14 +1,14 @@
 # Detect if player "has items" in their inventory.
-execute as @s[tag=!survival, nbt=!{Inventory:[]}, team=!Dev, team=!Mod, team=!Builder] run tellraw @s [{"text": "[", "color": "white"}, {"text": "Permissions", "color": "dark_red"}, {"text": "]: ", "color": "white"}, {"text": "Please, empty your inventory to swap into survival!", "color": "red"}]
+tellraw @s[tag=!survival,nbt=!{Inventory:[]}, team=!owner, team=!dev, team=!admin, team=!mod, team=!builder] [{"text": "[", "color": "white"}, {"text": "Permissions", "color": "dark_red"}, {"text": "]: ", "color": "white"}, {"text": "Please, empty your inventory to swap into survival!", "color": "red"}]
 
 # Detect if player has "NO ITEMS" in their inventory.
-execute as @s[tag=!survival, nbt={Inventory:[]}, team=!Dev, team=!Mod, team=!Builder] run tag @s add survival
+tag @s[tag=!survival,nbt={Inventory:[]}, team=!owner, team=!dev, team=!admin, team=!mod, team=!builder] add survival
 
-# If Rank is higher than Jr_builder Bypass:
-execute if score @s ranks > Jr_builder ranks run tag @s add survival
+# If Rank is higher than builder Bypass:
+execute if score @s rank > builder rank run tag @s add survival
 
 # Update Gamemode Text:
-tellraw @s[tag=survival] [{"text": "[", "color": "white"}, {"text": "Permissions", "color": "dark_red"}, {"text": "]: ", "color": "white"}, {"text": "Survival Mode Enabled!", "color": "green"}]
+tellraw @s[tag=survival] [{"text": "[", "color": "white"}, {"text": "Permissions", "color": "dark_red"}, {"text": "]: ", "color": "white"}, {"text": "Survival mode Enabled!", "color": "green"}]
 
 # Update Gamemode:
 gamemode survival @s[tag=survival]

@@ -17,4 +17,4 @@ execute as @e[type=minecraft:armor_stand,tag=warps] run tellraw @p [{"text": "Wa
 ###################################################################################
 # Reset Warps:
 ###################################################################################
-scoreboard players set @s warps 0
+scoreboard players set @s[scores={warps=1..}] warps 0

@@ -1,82 +1,38 @@
 ##################################################################
-	# Essentials #
+	# Guest Commands #
 ##################################################################
 scoreboard objectives add spawn trigger
+scoreboard objectives add spawn_cooldown dummy
+
+#
 scoreboard objectives add rules trigger
+scoreboard objectives add bal trigger
+scoreboard objectives add balance dummy
+
+#
+scoreboard objectives add homes trigger
+scoreboard objectives add home_cooldown dummy
+
+
+
+##################################################################
+	# Guest Commands, Tpa / Tpaccept #
+##################################################################
+scoreboard objectives add tparequest trigger
+scoreboard objectives add tpaccept trigger
+
+
+##################################################################
+	# Member Bank Commands #
+##################################################################
 scoreboard objectives add bank trigger
 scoreboard objectives add bank_interaction minecraft.custom:minecraft.talked_to_villager
 scoreboard objectives add bank_option trigger
 scoreboard objectives add bank_count dummy
-scoreboard objectives add bal trigger
-scoreboard objectives add balance dummy
-scoreboard objectives add showitem trigger
-
-#
-scoreboard objectives add gui_create trigger
-
-##################################################################
-	# Gravestone tp #
-##################################################################
-scoreboard objectives add gravestone trigger
-scoreboard objectives add graves deathCount
-scoreboard objectives add grave_dimension dummy
-scoreboard objectives add grave_x dummy
-scoreboard objectives add grave_y dummy
-scoreboard objectives add grave_z dummy
 
 
 ##################################################################
-	# Tpa / Tpaccept #
-##################################################################
-scoreboard objectives add tparequest trigger
-scoreboard objectives add tpaccept trigger
-scoreboard objectives add tpacancel trigger
-
-
-##################################################################
-	# Warps #
-##################################################################
-scoreboard players add total_warps warps 0
-scoreboard objectives add random_warp trigger
-scoreboard objectives add warp trigger
-scoreboard objectives add warps trigger
-scoreboard objectives add warp_x dummy
-scoreboard objectives add warp_y dummy
-scoreboard objectives add warp_z dummy
-
-
-##################################################################
-	# Warps Portals #
-##################################################################
-scoreboard objectives add facing_portal dummy
-scoreboard objectives add create_portal trigger
-scoreboard objectives add edit_portal trigger
-
-
-##################################################################
-	# Weather #
-##################################################################
-scoreboard objectives add clear trigger
-scoreboard objectives add day trigger
-scoreboard objectives add afternoon trigger
-scoreboard objectives add night trigger
-
-
-##################################################################
-	# Shops #
-##################################################################
-scoreboard objectives add create_shop trigger
-scoreboard objectives add shop_profession trigger
-scoreboard objectives add change_prof trigger
-
-
-##################################################################
-	# Homes #
-##################################################################
-scoreboard objectives add homes trigger
-
-##################################################################
-	# Homes 1 #
+	# Member Home Commands[0] #
 ##################################################################
 scoreboard objectives add home1_id dummy
 scoreboard objectives add home_1 trigger
@@ -89,7 +45,7 @@ scoreboard objectives add home_z1 dummy
 
 
 ##################################################################
-	# Homes 2 #
+	# Member Home Commands[1] #
 ##################################################################
 scoreboard objectives add home2_id dummy
 scoreboard objectives add home_2 trigger
@@ -102,7 +58,7 @@ scoreboard objectives add home_z2 dummy
 
 
 ##################################################################
-	# Homes 3 #
+	# Member Home Commands[2] #
 ##################################################################
 scoreboard objectives add home3_id dummy
 scoreboard objectives add home_3 trigger
@@ -115,23 +71,86 @@ scoreboard objectives add home_z3 dummy
 
 
 ##################################################################
-	# Gamemodes #
+	# Trusted Commands #
+##################################################################
+scoreboard objectives add showitem trigger
+
+
+##################################################################
+	# Supporter Gravestone #
+##################################################################
+scoreboard objectives add gravestone trigger
+scoreboard objectives add gs_cooldown dummy
+scoreboard objectives add graves deathCount
+
+#
+scoreboard objectives add grave_dimension dummy
+scoreboard objectives add grave_x dummy
+scoreboard objectives add grave_y dummy
+scoreboard objectives add grave_z dummy
+
+
+##################################################################
+	# Supporter Commands #
 ##################################################################
 scoreboard objectives add survival trigger
 scoreboard objectives add creative trigger
+
+
+##################################################################
+	# Moderator Commands #
+##################################################################
 scoreboard objectives add spectator trigger
-
-
-##################################################################
-	# Moderators Comamnds #
-##################################################################
 scoreboard objectives add god trigger
+
+
+##################################################################
+	# Admin Warps Commands #
+##################################################################
+scoreboard objectives add warp trigger
+scoreboard objectives add warps trigger
+
+#
+scoreboard objectives add warp_x dummy
+scoreboard objectives add warp_y dummy
+scoreboard objectives add warp_z dummy
+
+#
 scoreboard objectives add create_warp trigger
 scoreboard objectives add delete_warp trigger
 
+#
+scoreboard objectives add facing_portal dummy
+scoreboard objectives add create_portal trigger
+scoreboard objectives add edit_portal trigger
 
 ##################################################################
-	# Developer Commandsw #
+	# Admin Weather Commands #
+##################################################################
+scoreboard objectives add clear trigger
+scoreboard objectives add day trigger
+scoreboard objectives add afternoon trigger
+scoreboard objectives add night trigger
+
+
+##################################################################
+	# Admin Shops Commands #
+##################################################################
+scoreboard objectives add gui_create trigger
+
+#
+scoreboard objectives add create_shop trigger
+scoreboard objectives add shop_profession trigger
+scoreboard objectives add change_prof trigger
+
+
+##################################################################
+	# Admin Permissions Commands #
+##################################################################
+scoreboard objectives add perms trigger
+
+
+##################################################################
+	# Owner Commands #
 ##################################################################
 scoreboard objectives add setspawn trigger
-scoreboard objectives add delspawn trigger

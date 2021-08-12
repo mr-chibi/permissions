@@ -7,14 +7,14 @@ tellraw @s [{"text": "[", "color": "white"}, {"text": "Permissions", "color": "d
 ##############################################################
 	# Summon Armorstand:
 ##############################################################
-summon minecraft:armor_stand ~ ~ ~ {Tags:["home_2"]}
+summon minecraft:marker ~ ~ ~ {Tags:["home_2"]}
 
 
 ##############################################################
 	# Store Armorstand UUID, then match it as players:
 ##############################################################
 execute as @s store result score @s home2_id run data get entity @s UUID[0]
-scoreboard players operation @e[type=minecraft:armor_stand,limit=1,distance=0..2] home2_id = @s home2_id
+scoreboard players operation @e[type=minecraft:marker,limit=1,distance=0..2] home2_id = @s home2_id
 
 
 ##############################################################
@@ -36,7 +36,7 @@ execute if entity @s[nbt={Dimension:"minecraft:the_end"}] run scoreboard players
 ##############################################################
 	# Kill Armorstand:
 ##############################################################
-kill @e[type=minecraft:armor_stand,tag=home_2]
+kill @e[type=minecraft:marker,tag=home_2]
 
 
 ##############################################################

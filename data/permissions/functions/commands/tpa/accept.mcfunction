@@ -1,9 +1,11 @@
-#
-tag @s add tpaccept
+# Accepted teleportation request:
+tellraw @a[tag=!tparequest,scores={tpaccept=1..}] [{"text": "[", "color": "white"}, {"text": "Mr_Chibi's Permissions", "color": "red"}, {"text": "]", "color": "white"}, {"text": " Accepted Teleportation Request from ", "color": "green"}, {"selector": "@a[tag=tparequest]", "color": "gold"}]
 
-#
-execute as @a[tag=tpaccept,limit=1] at @s if entity @a[tag=tparequest,limit=1] run tellraw @s [{"text": "[", "color": "white"}, {"text": "Permissions", "color": "dark_red"}, {"text": "]: ", "color": "white"}, {"text": "Accepted teleportation request from, ", "color": "green"}, {"selector": "@a[limit=1,tag=tparequest]"}]
+# Teleport Player, to User:
+execute as @a at @s[tag=!tparequest] run tp @a[tag=tparequest] @s
 
+# Remove Tag:
+execute as @a at @s[tag=tparequest] run tag @s remove tparequest
 
-#
+# Reset Command:
 scoreboard players set @s[scores={tpaccept=1..}] tpaccept 0

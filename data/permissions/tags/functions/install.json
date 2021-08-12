@@ -1,7 +1,7 @@
 {
 	"values": [
 		"permissions:scoreboards/ranks",
-		"permissions:scoreboards/commands",
-		"permissions:scoreboards/mobs_currency"
+		"permissions:scoreboards/permissions",
+		"permissions:scoreboards/commands"
 	]
 }

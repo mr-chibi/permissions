@@ -1,6 +1,6 @@
 # Detect if player has "ITEMS or NO Items":
-execute as @s[nbt=!{Inventory:[]}] run tag @s add spectator
-execute as @s[nbt={Inventory:[]}] run tag @s add spectator
+tag @s[nbt=!{Inventory:[]}] add spectator
+tag @s[nbt={Inventory:[]}] add spectator
 
 # Update Gamemode Text:
 tellraw @s[tag=spectator] [{"text": "[", "color": "white"}, {"text": "Permissions", "color": "dark_red"}, {"text": "]: ", "color": "white"}, {"text": "Spectator Mode Enabled!", "color": "green"}]
