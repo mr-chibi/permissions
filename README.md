@@ -6,7 +6,9 @@
   <li>Commands</li>
   <li>Ranks</li>
   <li>Limited Creative</li>
+  <li>Homes</li>
   <li>Warps</li>
+  <li>Permissions</li>
 </ul>
 
 <h2>How it was written in:</h2>
