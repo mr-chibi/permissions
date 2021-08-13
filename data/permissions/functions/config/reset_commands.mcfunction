@@ -56,6 +56,7 @@ execute if score creative permissions > @s rank run scoreboard players reset @s 
 ##################################################################
 	# Moderator Commands #
 ##################################################################
+execute if score gui_create permissions > @s rank run scoreboard players reset @s gui_create
 execute if score spectator permissions > @s rank run scoreboard players reset @s spectator
 execute if score god permissions > @s rank run scoreboard players reset @s god
 

@@ -106,6 +106,7 @@ scoreboard objectives add creative trigger
 ##################################################################
 	# Moderator Commands #
 ##################################################################
+scoreboard objectives add gui_create trigger
 scoreboard objectives add spectator trigger
 scoreboard objectives add god trigger
 
@@ -142,9 +143,6 @@ scoreboard objectives add night trigger
 ##################################################################
 	# Admin Shops Commands #
 ##################################################################
-scoreboard objectives add gui_create trigger
-
-#
 scoreboard objectives add create_shop trigger
 scoreboard objectives add shop_profession trigger
 scoreboard objectives add change_prof trigger
