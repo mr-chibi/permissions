@@ -42,6 +42,7 @@ execute if score delhome_3 permissions > @s rank run scoreboard players reset @s
 ##################################################################
 	# Trusted Commands #
 ##################################################################
+execute if score sit permissions > @s rank run scoreboard players reset @s sit
 execute if score showitem permissions > @s rank run scoreboard players reset @s showitem
 
 
@@ -91,6 +92,8 @@ execute if score night permissions > @s rank run scoreboard players reset @s nig
 ##################################################################
 	# Admin Permissions Commands #
 ##################################################################
+execute if score kill_floor_entity permissions > @s rank run scoreboard players reset @s kill_floor_entity
+execute if score edit_rules permissions > @s rank run scoreboard players reset @s edit_rules
 execute if score perms permissions > @s rank run scoreboard players reset @s perms
 
 

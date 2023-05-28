@@ -1,4 +1,7 @@
+# Install Perms:
 function #permissions:install
 
-#
-execute as @a run tellraw @s [{"text": "[", "color": "white"}, {"text": "Mr_Chibi's Permissions", "color": "red"}, {"text": "]", "color": "white"}, {"text": " Reloading...", "color": "green"}]
+# Install Ranks once:
+execute if score install_ranks permission_install matches 0 run function permissions:scoreboards/ranks
+execute if score default_perms permission_install matches 0 run function permissions:scoreboards/default_permissions
+execute if score updated_perms permission_install matches 0 run function permissions:scoreboards/updated_permissions

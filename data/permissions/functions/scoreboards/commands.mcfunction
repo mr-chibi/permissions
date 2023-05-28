@@ -79,6 +79,8 @@ scoreboard objectives add home_z3 dummy
 ##################################################################
 	# Trusted Commands #
 ##################################################################
+scoreboard objectives add sitting dummy
+scoreboard objectives add sit trigger
 scoreboard objectives add showitem trigger
 
 
@@ -152,6 +154,13 @@ scoreboard objectives add change_prof trigger
 	# Admin Permissions Commands #
 ##################################################################
 scoreboard objectives add perms trigger
+scoreboard objectives add kill_floor_entity trigger
+
+scoreboard objectives add perms_install dummy
+scoreboard players add rules perms_install 0
+
+#
+scoreboard objectives add edit_rules trigger
 
 
 ##################################################################

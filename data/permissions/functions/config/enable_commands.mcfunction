@@ -42,6 +42,7 @@ execute if score delhome_3 permissions <= @s rank run scoreboard players enable 
 ##################################################################
 	# Trusted Commands #
 ##################################################################
+execute if score sit permissions <= @s rank run scoreboard players enable @s sit
 execute if score showitem permissions <= @s rank run scoreboard players enable @s showitem
 
 
@@ -90,6 +91,8 @@ execute if score night permissions <= @s rank run scoreboard players enable @s n
 ##################################################################
 	# Admin Permissions Commands #
 ##################################################################
+execute if score kill_floor_entity permissions <= @s rank run scoreboard players enable @s kill_floor_entity
+execute if score edit_rules permissions <= @s rank run scoreboard players enable @s edit_rules
 execute if score perms permissions <= @s rank run scoreboard players enable @s perms
 
 

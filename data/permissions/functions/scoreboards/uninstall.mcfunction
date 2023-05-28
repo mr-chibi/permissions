@@ -79,6 +79,8 @@ scoreboard objectives remove home_z3
 ##################################################################
 	# Trusted Commands #
 ##################################################################
+scoreboard objectives remove sit
+scoreboard objectives remove sitting
 scoreboard objectives remove showitem
 
 
@@ -153,6 +155,12 @@ scoreboard objectives remove change_prof
 ##################################################################
 	# Admin Permissions Commands #
 ##################################################################
+data remove storage minecraft:rules list
+
+#
+scoreboard objectives remove kill_floor_entity
+scoreboard objectives remove perms_install
+scoreboard objectives remove edit_rules
 scoreboard objectives remove perms
 
 
@@ -161,6 +169,62 @@ scoreboard objectives remove perms
 ##################################################################
 scoreboard objectives remove setspawn
 
+
+
+##################################################################
+	# Remove Killed Mobs #
+##################################################################
+scoreboard objectives remove kill_creeper
+
+#
+scoreboard objectives remove kill_skeleton
+scoreboard objectives remove kill_stray
+
+#
+scoreboard objectives remove kill_zombie
+scoreboard objectives remove kill_zombie_vil
+scoreboard objectives remove kill_husk
+scoreboard objectives remove kill_drown
+
+#
+scoreboard objectives remove kill_spider
+scoreboard objectives remove kill_cav_spider
+
+#
+scoreboard objectives remove kill_slime
+scoreboard objectives remove kill_phantom
+
+#
+scoreboard objectives remove kill_guardian
+scoreboard objectives remove kill_eld_guard
+
+#
+scoreboard objectives remove kill_ravager
+scoreboard objectives remove kill_pillager
+scoreboard objectives remove kill_evoker
+scoreboard objectives remove kill_vindicator
+scoreboard objectives remove kill_witch
+
+#
+scoreboard objectives remove kill_zom_piglin
+scoreboard objectives remove kill_ghast
+scoreboard objectives remove kill_wither_ske
+scoreboard objectives remove kill_blaze
+scoreboard objectives remove kill_magma_cube
+
+#
+scoreboard objectives remove kill_enderman
+scoreboard objectives remove kill_shulker
+
+#
+scoreboard objectives remove kill_enderdrag
+scoreboard objectives remove kill_wither
+
+
+##################################################################
+	# Remove Perms #
+##################################################################
+scoreboard objectives remove permission_install
 
 ##################################################################
 	# Remove Ranks #
@@ -179,4 +243,4 @@ team remove owner
 ##################################################################
 	# Remove Datapack #
 ##################################################################
-datapack disable "file/permissions_1.17.1_v1_full_release.zip"
+datapack disable "file/permissions_v2"

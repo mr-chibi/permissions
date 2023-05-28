@@ -52,3 +52,7 @@ team modify mod prefix [{"text": "[", "color": "white"}, {"text": "Moderator", "
 team modify admin prefix [{"text": "[", "color": "white"}, {"text": "Admin", "color": "#DD0303"}, {"text": "] ", "color": "white"}]
 team modify dev prefix [{"text": "[", "color": "white"}, {"text": "Developer", "color": "#287EF3"}, {"text": "] ", "color": "white"}]
 team modify owner prefix [{"text": "[", "color": "white"}, {"text": "Owner", "color": "#EA123E"}, {"text": "] ", "color": "white"}]
+
+# Prevent Ranks from updating:
+execute if score install_ranks permission_install matches 0 run execute as @a run tellraw @s [{"text": "[", "color": "white"}, {"text": "Mr_Chibi's Permissions", "color": "red"}, {"text": "]", "color": "white"}, {"text": " Installed Ranks Permissions!", "color": "gray"}]
+execute if score install_ranks permission_install matches 0 run scoreboard players set install_ranks permission_install 1

@@ -6,6 +6,10 @@ scoreboard players add setspawn permissions 0
 ###################################################################################
 # Admin Permissions:
 ###################################################################################
+data get storage minecraft:rules {list:[]} 
+
+scoreboard players add kill_floor_entity permissions 0
+scoreboard players add edit_rules permissions 0
 scoreboard players add perms permissions 0
 
 ###################################################################################
@@ -49,6 +53,7 @@ scoreboard players add creative permissions 0
 ###################################################################################
 # Trusted Commands:
 ###################################################################################
+scoreboard players add sit permissions 0
 scoreboard players add showitem permissions 0
 
 

@@ -19,6 +19,9 @@ effect give @s minecraft:resistance 5 9
 effect give @s minecraft:fire_resistance 30 9
 
 #
+gamemode spectator @s[scores={home_cooldown=2}]
+
+#
 execute as @s[scores={home_cooldown=3..}] run execute as @e[type=minecraft:armor_stand,tag=tp_home2] at @s run function permissions:loops/homes/tp_2
 
 #

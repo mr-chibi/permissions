@@ -6,6 +6,8 @@ scoreboard players set setspawn permissions 9
 ###################################################################################
 # Admin Permissions:
 ###################################################################################
+scoreboard players set kill_floor_entity permissions 7
+scoreboard players set edit_rules permissions 7
 scoreboard players set perms permissions 7
 
 ###################################################################################
@@ -49,6 +51,7 @@ scoreboard players set creative permissions 4
 ###################################################################################
 # Trusted Commands:
 ###################################################################################
+scoreboard players set sit permissions 3
 scoreboard players set showitem permissions 3
 
 
@@ -85,3 +88,10 @@ scoreboard players set bal permissions 1
 scoreboard players set bank permissions 1
 scoreboard players set rules permissions 1
 scoreboard players set spawn permissions 1
+
+
+###################################################################################
+# Prevent Ranks from updating:
+###################################################################################
+execute if score default_perms permission_install matches 0 run execute as @a run tellraw @s [{"text": "[", "color": "white"}, {"text": "Mr_Chibi's Permissions", "color": "red"}, {"text": "]", "color": "white"}, {"text": " Installed Default Permissions!", "color": "gray"}]
+execute if score default_perms permission_install matches 0 run scoreboard players set default_perms permission_install 1

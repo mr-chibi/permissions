@@ -1,3 +1,9 @@
+# Remove Limit Creative Armor:
+item replace entity @s[scores={rank=..4},gamemode=creative] armor.head with minecraft:air
+item replace entity @s[scores={rank=..4},gamemode=creative] armor.chest with minecraft:air
+item replace entity @s[scores={rank=..4},gamemode=creative] armor.legs with minecraft:air
+item replace entity @s[scores={rank=..4},gamemode=creative] armor.feet with minecraft:air
+
 # Detect if player "has items" in their inventory.
 tellraw @s[tag=!survival,nbt=!{Inventory:[]}, team=!owner, team=!dev, team=!admin, team=!mod, team=!builder] [{"text": "[", "color": "white"}, {"text": "Permissions", "color": "dark_red"}, {"text": "]: ", "color": "white"}, {"text": "Please, empty your inventory to swap into survival!", "color": "red"}]
 

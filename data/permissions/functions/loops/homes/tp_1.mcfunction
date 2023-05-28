@@ -8,3 +8,6 @@ execute store result entity @s Pos[2] double 1 run execute as @p at @s[scores={h
 execute in minecraft:overworld run tp @p[tag=home1_overworld,scores={home_cooldown=3}] @s
 execute in minecraft:the_nether run tp @p[tag=home1_the_nether,scores={home_cooldown=3}] @s
 execute in minecraft:the_end run tp @p[tag=home1_the_end,scores={home_cooldown=3}] @s
+
+#
+gamemode survival @p[scores={home_cooldown=4}]

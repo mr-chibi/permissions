@@ -6,6 +6,8 @@ execute if score setspawn permissions matches 0 run scoreboard players set setsp
 ###################################################################################
 # Admin Permissions:
 ###################################################################################
+execute if score kill_floor_entity permissions matches 0 run scoreboard players set kill_floor_entity permissions 1
+execute if score edit_rules permissions matches 0 run scoreboard players set edit_rules permissions 1
 execute if score perms permissions matches 0 run scoreboard players set perms permissions 1
 
 ###################################################################################
@@ -49,6 +51,7 @@ execute if score creative permissions matches 0 run scoreboard players set creat
 ###################################################################################
 # Trusted Commands:
 ###################################################################################
+execute if score sit permissions matches 0 run scoreboard players set sit permissions 1
 execute if score showitem permissions matches 0 run scoreboard players set showitem permissions 1
 
 ###################################################################################

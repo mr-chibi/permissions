@@ -36,6 +36,7 @@ execute if score delhome_3 permissions <= @s[scores={delhome_3=1..}] rank run fu
 ###################################################################################
 # Trusted Commands:
 ###################################################################################
+execute if score sit permissions <= @s[scores={sit=1..}] rank run function permissions:commands/sit
 execute if score showitem permissions <= @s[scores={showitem=1..}] rank run function permissions:commands/showitem
 
 
@@ -97,9 +98,19 @@ execute if score afternoon permissions <= @s[scores={afternoon=1..}] rank run fu
 execute if score night permissions <= @s[scores={night=1..}] rank run function permissions:commands/weather/night
 
 
+
 ###################################################################################
 # Admin Permissions Commands:
 ###################################################################################
+execute if score edit_rules permissions <= @s[scores={edit_rules=1}] rank run function permissions:commands/admin/permissions_pg_1
+
+
+###################################################################################
+# Admin Permissions Commands:
+###################################################################################
+execute if score kill_floor_entity permissions <= @s[scores={kill_floor_entity=1..}] rank run function permissions:commands/admin/kill_floor_entity
+execute if score edit_rules permissions <= @s[scores={edit_rules=1..}] rank run function permissions:commands/admin/edit_rules
+
 execute if score perms permissions <= @s[scores={perms=1}] rank run function permissions:commands/admin/permissions_pg_1
 execute if score perms permissions <= @s[scores={perms=2}] rank run function permissions:commands/admin/permissions_pg_2
 execute if score perms permissions <= @s[scores={perms=3}] rank run function permissions:commands/admin/permissions_pg_3
