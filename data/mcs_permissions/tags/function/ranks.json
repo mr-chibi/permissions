@@ -1,0 +1,6 @@
+{
+	"values": [
+		"mcs_permissions:scoreboards/ranks/join",
+		"mcs_permissions:scoreboards/ranks/init"
+	]
+}

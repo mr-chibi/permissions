@@ -1,0 +1,41 @@
+# Limited Creative [Hotbar] [Restrictions]:
+execute if items entity @s hotbar.* #mcs_permissions:armor run clear @s #mcs_permissions:armor
+execute if items entity @s hotbar.* #mcs_permissions:buckets run clear @s #mcs_permissions:buckets
+execute if items entity @s hotbar.* #mcs_permissions:containers run clear @s #mcs_permissions:containers
+execute if items entity @s hotbar.* #mcs_permissions:discs run clear @s #mcs_permissions:discs
+execute if items entity @s hotbar.* #mcs_permissions:food run clear @s #mcs_permissions:food
+execute if items entity @s hotbar.* #mcs_permissions:horse_armor run clear @s #mcs_permissions:horse_armor
+execute if items entity @s hotbar.* #mcs_permissions:loot_drops run clear @s #mcs_permissions:loot_drops
+execute if items entity @s hotbar.* #mcs_permissions:materials run clear @s #mcs_permissions:materials
+execute if items entity @s hotbar.* #mcs_permissions:misc run clear @s #mcs_permissions:misc
+execute if items entity @s hotbar.* #mcs_permissions:mob_drops run clear @s #mcs_permissions:mob_drops
+execute if items entity @s hotbar.* #mcs_permissions:op run clear @s #mcs_permissions:op
+execute if items entity @s hotbar.* #mcs_permissions:ores run clear @s #mcs_permissions:ores
+execute if items entity @s hotbar.* #mcs_permissions:potions run clear @s #mcs_permissions:potions
+execute if items entity @s hotbar.* #mcs_permissions:sherds run clear @s #mcs_permissions:sherds
+execute if items entity @s hotbar.* #mcs_permissions:shulker_box run clear @s #mcs_permissions:shulker_box
+execute if items entity @s hotbar.* #mcs_permissions:skulls run clear @s #mcs_permissions:skulls
+execute if items entity @s hotbar.* #mcs_permissions:spawn_eggs run clear @s #mcs_permissions:spawn_eggs
+execute if items entity @s hotbar.* #mcs_permissions:tools run clear @s #mcs_permissions:tools
+execute if items entity @s hotbar.* #mcs_permissions:trims run clear @s #mcs_permissions:trims
+
+# Limited Creative [Inventory] [Restrictions]:
+execute if items entity @s inventory.* #mcs_permissions:armor run clear @s #mcs_permissions:armor
+execute if items entity @s inventory.* #mcs_permissions:buckets run clear @s #mcs_permissions:buckets
+execute if items entity @s inventory.* #mcs_permissions:containers run clear @s #mcs_permissions:containers
+execute if items entity @s inventory.* #mcs_permissions:discs run clear @s #mcs_permissions:discs
+execute if items entity @s inventory.* #mcs_permissions:food run clear @s #mcs_permissions:food
+execute if items entity @s inventory.* #mcs_permissions:horse_armor run clear @s #mcs_permissions:horse_armor
+execute if items entity @s inventory.* #mcs_permissions:loot_drops run clear @s #mcs_permissions:loot_drops
+execute if items entity @s inventory.* #mcs_permissions:materials run clear @s #mcs_permissions:materials
+execute if items entity @s inventory.* #mcs_permissions:misc run clear @s #mcs_permissions:misc
+execute if items entity @s inventory.* #mcs_permissions:mob_drops run clear @s #mcs_permissions:mob_drops
+execute if items entity @s inventory.* #mcs_permissions:op run clear @s #mcs_permissions:op
+execute if items entity @s inventory.* #mcs_permissions:ores run clear @s #mcs_permissions:ores
+execute if items entity @s inventory.* #mcs_permissions:potions run clear @s #mcs_permissions:potions
+execute if items entity @s inventory.* #mcs_permissions:sherds run clear @s #mcs_permissions:sherds
+execute if items entity @s inventory.* #mcs_permissions:shulker_box run clear @s #mcs_permissions:shulker_box
+execute if items entity @s inventory.* #mcs_permissions:skulls run clear @s #mcs_permissions:skulls
+execute if items entity @s inventory.* #mcs_permissions:spawn_eggs run clear @s #mcs_permissions:spawn_eggs
+execute if items entity @s inventory.* #mcs_permissions:tools run clear @s #mcs_permissions:tools
+execute if items entity @s inventory.* #mcs_permissions:trims run clear @s #mcs_permissions:trims

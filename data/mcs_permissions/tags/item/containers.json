@@ -1,0 +1,14 @@
+{
+"values":[
+	"minecraft:barrel",
+	"minecraft:chest",
+	"minecraft:trapped_chest",
+	"minecraft:ender_chest",
+	"minecraft:dispenser",
+	"minecraft:hopper",
+	"minecraft:dropper",
+	"minecraft:furnace",
+	"minecraft:blast_furnace",
+	"minecraft:smoker"
+	]
+}

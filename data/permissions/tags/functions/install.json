@@ -1,9 +1,0 @@
-{
-	"values": [
-		"permissions:scoreboards/install",
-		"permissions:scoreboards/commands",
-		"permissions:scoreboards/permissions",
-		"permissions:scoreboards/set_permissions",
-		"permissions:scoreboards/killed_mobs"
-	]
-}
