@@ -34,6 +34,10 @@ execute as @e[type=minecraft:marker,distance=0..5,sort=nearest,tag=mcs_warps] at
 # Remove Entity:
 execute as @e[type=minecraft:marker,distance=0..5,sort=nearest,tag=mcs_warps] at @s run kill @s
 
+#
+data modify storage mcs_warps warps append from storage minecraft:mcs_warps warps[0]
+data remove storage minecraft:mcs_warps warps[0]
+
 # [Created] Warp:
 tellraw @s [{"text": "Successfully created ", "color": "#a3a3a3"}, {"text": "warp", "color": "red"}, {"text": "!", "color": "#a3a3a3"}]
 
