@@ -11,7 +11,7 @@ execute if score floor_entity_max kill_floor_entity matches 20 run tellraw @a [{
 execute if score floor_entity_max kill_floor_entity matches 1 run tellraw @a [{"text": "All floor ", "color": "#a3a3a3"}, {"text": "items", "color": "red"}, {"text": " have been removed!", "color": "#a3a3a3"}]
 
 # If "Ticks" < "0" or more Remove [Items]:
-execute if score floor_entity_max kill_floor_entity matches ..0 run kill @e[type=minecraft:item]
+execute if score floor_entity_max kill_floor_entity matches 1 run kill @e[type=minecraft:item]
 
 # If "Ticks" < "0" or more Reset [Timer]:
-execute if score floor_entity_max kill_floor_entity matches ..0 run scoreboard players operation floor_entity_max kill_floor_entity = entity_timer kill_floor_entity
+execute if score floor_entity_max kill_floor_entity matches 1 run scoreboard players operation floor_entity_max kill_floor_entity = entity_timer kill_floor_entity
