@@ -45,3 +45,11 @@ execute if score @s delhome_3 matches 1.. run function mcs_member:commands/homes
 # Tags:
 ####################################
 execute if score @s mcs_dismount matches 1.. run function mcs_member:tags/dismount
+
+####################################
+# Clock:
+####################################
+function mcs_member:tags/cooldowns/tp_spawn
+function mcs_member:tags/cooldowns/tp_home_1
+function mcs_member:tags/cooldowns/tp_home_2
+function mcs_member:tags/cooldowns/tp_home_3

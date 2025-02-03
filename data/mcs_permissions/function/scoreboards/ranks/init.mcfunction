@@ -5,3 +5,6 @@ scoreboard players set @s[team=mcs_builder] mcs_ranks 3
 scoreboard players set @s[team=mcs_moderator] mcs_ranks 4
 scoreboard players set @s[team=mcs_admin] mcs_ranks 5
 scoreboard players set @s[team=mcs_owner] mcs_ranks 6
+
+# Cooldowns:
+scoreboard players add @s perms_cooldown 0

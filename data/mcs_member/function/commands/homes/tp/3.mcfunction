@@ -7,13 +7,14 @@ execute as @e[type=minecraft:marker,distance=0..5,sort=nearest,tag=mcs_home_3] a
 execute as @e[type=minecraft:marker,distance=0..5,sort=nearest,tag=mcs_home_3] at @s store result entity @s data.z int 1 run scoreboard players get @p home3_z
 
 # Teleport Player
-function mcs_member:commands/homes/tp/data/3 with entity @e[type=minecraft:marker,distance=0..5,sort=nearest,tag=mcs_home_3,limit=1] data
+execute if score teleport perms_cooldown matches 0 run function mcs_member:commands/homes/tp/data/3 with entity @e[type=minecraft:marker,distance=0..5,sort=nearest,tag=mcs_home_3,limit=1] data
+execute if score teleport perms_cooldown matches 20.. run tag @s add tp_cooldown_home_3
 
 # Teleport Msg:
-tellraw @s [{"text": "Teleporting to ", "color": "#a3a3a3"}, {"text": "home 3", "color": "red"}, {"text": "!", "color": "#a3a3a3"}]
+tellraw @s [{"text": "Teleporting to ", "color": "#a3a3a3"}, {"text": "home 3", "color": "red"}, {"text": "...", "color": "#a3a3a3"}]
 
 # Remove Entity:
-execute as @e[type=minecraft:marker,tag=mcs_home_3] at @s run kill @s
+execute if score teleport perms_cooldown matches 0 as @e[type=minecraft:marker,tag=mcs_home_3] at @s run kill @s
 
 # Enable Home/Del command:
 scoreboard players enable @s home_3

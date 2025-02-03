@@ -8,3 +8,6 @@ scoreboard players enable @s del_warp
 
 # Floor Entities:
 scoreboard players enable @s kill_floor_entity
+
+# Cooldowns:
+scoreboard players enable @s tp_cooldown

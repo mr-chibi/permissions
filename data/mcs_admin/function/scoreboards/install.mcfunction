@@ -28,3 +28,13 @@ scoreboard players set mcs_ticks_hour kill_floor_entity 72000
 scoreboard players add entity_timer kill_floor_entity 0
 scoreboard players add floor_entity_max kill_floor_entity 0
 scoreboard players add floor_entity_min kill_floor_entity 0
+
+# Cooldown Commands:
+scoreboard objectives add tp_cooldown trigger
+
+# Cooldowns:
+scoreboard objectives add perms_cooldown dummy
+
+# Cooldowns Class variables:
+scoreboard players set ticks_per_sec perms_cooldown 20
+scoreboard players add teleport perms_cooldown 0

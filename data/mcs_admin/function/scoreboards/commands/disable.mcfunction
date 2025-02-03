@@ -8,3 +8,6 @@ scoreboard players reset @s del_warp
 
 # Floor Entities:
 scoreboard players reset @s kill_floor_entity
+
+# Cooldowns:
+scoreboard players reset @s tp_cooldown

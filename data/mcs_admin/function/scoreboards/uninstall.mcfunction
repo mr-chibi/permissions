@@ -13,3 +13,9 @@ scoreboard objectives remove warp_z
 
 #
 scoreboard objectives remove kill_floor_entity
+
+# Cooldown Commands:
+scoreboard objectives remove tp_cooldown
+
+# Cooldowns:
+scoreboard objectives remove perms_cooldown
