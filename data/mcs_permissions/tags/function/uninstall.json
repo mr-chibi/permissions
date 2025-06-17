@@ -1,9 +1,6 @@
 {
 	"values": [
-		// Install:
 		"mcs_permissions:scoreboards/uninstall",
-
-		// Commands
 		"mcs_admin:scoreboards/uninstall",
 		"mcs_mod:scoreboards/uninstall",
 		"mcs_builder:scoreboards/uninstall",

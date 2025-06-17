@@ -1,10 +1,7 @@
 {
 	"values": [
-
-		// Installation
 		"mcs_permissions:scoreboards/ranks/prefixes",
 
-		// Commands:
 		"mcs_admin:scoreboards/install",
 		"mcs_mod:scoreboards/install",
 		"mcs_builder:scoreboards/install",
